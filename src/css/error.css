@@ -1,0 +1,83 @@
+/* ERROR PAGE */
+.error-area {
+    position: fixed;
+    background: linear-gradient(to right bottom, #FF0080, #7928CA);
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999999999999999999999999999999999999999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-content h1 {
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px #fff;
+}
+
+.error-content p {
+    font-size: 50px;
+    text-shadow: 0 0 10px #fff;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.error-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 0 0 10px #fff;
+    position: relative;
+    z-index: 999999999999999999;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: #CB0C9F;
+    text-shadow: 0 0 3px #7928CA;
+}
+
+.btn:hover.btn::before {
+    left: 0;
+}
+
+.btn::before {
+    content: '';
+    width: 200px;
+    height: 60px;
+    color: #CB0C9F;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: -110%;
+    transition: all 0.4s;
+    background: #fff;
+    z-index: -1;
+}

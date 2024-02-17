@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+:root {
+    --primary-color: #F8F9FA;
+    --scrool-bg-color: #faddf8;
+    --scrool-color: #ebafe9;
+    --primary-content-bg: #fff;
+    --primary-box-shadow: rgba(0, 0, 0, 0.11);
+    --sidebar-linear-gradient: linear-gradient(63deg, #FFF 0%, #fdebff 45.56%, #FFF 83.28%);
+    --logo-color: #CB0C9F;
+    --primary-text-color: #67748E;
+    --sidebar-box-bg: #E9ECEF;
+    --sidebar-icon-color: #3A416F;
+    --hover-color: #252F40;
+    --sidebar-bg-hover: linear-gradient(63deg, #FFF 0%, #F5F5F5 45.56%, #ffffff 83.28%);
+    --menu-open-color: #616a7b;
+    --course-price: #c3990f;
+    --form-modal-bg: rgba(94, 86, 94, 0.39);
+    --hover-effect: #a1a1a1;
+    --search-border-color: #dadada;
+    --form-border-color: #2c2c2b;
+    --old-month-days: #a9a9a9;
+    --notification-bg-hover: #f9f9f9;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    height: calc(100vh - 40px);
+    width: 100%;
+    gap: 20px;
+}
+
+/* MAIN */
+.wrapper main {
+    width: 100%;
+    height: calc(100vh - 40px);
+}
+
+.main-content {
+    height: calc(100vh - 120px);
+    overflow: auto;
+    margin-top: 20px;
+    padding: 0 5px;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--scrool-bg-color);
+    color: var(--scrool-color);
+    border-radius: 8px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: var(--scrool-color);
+    border-radius: 8px;
+    width: 4px;
+}
+
+.mode-active {
+    --primary-color: #1f1f1f;
+    --scrool-bg-color: #363737;
+    --scrool-color: #212020;
+    --primary-content-bg: #292727;
+    --primary-box-shadow: rgba(17, 16, 16, 1);
+    --sidebar-linear-gradient: #292727;
+    --primary-text-color: #ccc;
+    --sidebar-box-bg: #292a2c;
+    --sidebar-icon-color: #ccc;
+    --hover-color: #f0f0f0;
+    --sidebar-bg-hover: rgb(48, 48, 51, 1);
+    --menu-open-color: #f0f0f0;
+    --course-price: #c3990f;
+    --form-modal-bg: rgba(0, 0, 0, 0.39);
+    --hover-effect: #888383;
+    --search-border-color: #333;
+    --form-border-color: #a8a8a8;
+    --old-month-days: #838383;
+    --notification-bg-hover:rgb(35, 35, 36);
+}
+
+@media screen and (max-width:400px) {
+    body{
+        padding: 10px
+    }
+}
+
+@import "../css/course.css";
+@import "../css/error.css";
+@import "../css/teacher.css";
+@import "../css/formModal.css";
+@import "../css/navbar.css";
+@import "../css/sidebar.css";
+@import "../css/reception.css";
+@import '../css/groups.css';
+@import '../css/home.css';
+@import '../css/news.css';
+@import '../css/signin.css';
+@import '../css/settings.css';
