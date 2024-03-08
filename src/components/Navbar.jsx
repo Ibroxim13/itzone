@@ -15,7 +15,7 @@ export default function Navbar(props) {
   const notContent = useRef()
   const [dep, setDep] = useState(false)
   const [notContentChanger, setNotContentChanger] = useState(false)
-  const [mode, setMode] = useState(JSON.parse(localStorage.getItem("mode") == "dark") ? true : false)
+  const [mode, setMode] = useState(JSON.parse(localStorage.getItem("mode") == "light") ? false : true)
 
   const openSidebarMenu = () => {
     props.sidebarMenu.current.style.left = "0";
