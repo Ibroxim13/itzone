@@ -42,7 +42,7 @@ export default function Signin({ setActive }) {
         <div className='sign-in'>
             <div className="sign-in-content">
                 <h2 className='sign-in-title'>Sign In</h2>
-                <p className='sign-in-text'>Enter your username and password</p>
+                <p className='sign-in-text'>Enter your username and password "for review{username: admin , parol: admin}"</p>
                 <form onSubmit={(e) => signin(e)} className='sign-in-form'>
                     <input required ref={username} type="text" placeholder='Enter username' />
                     <div>
